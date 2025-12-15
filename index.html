@@ -2,678 +2,580 @@
 <html lang="tr">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Abdul Samet Avukatlık Bürosu | Ankara</title>
-  <meta name="description" content="Abdul Samet Avukatlık Bürosu; ceza, aile, ticaret, gayrimenkul ve daha birçok alanda profesyonel hukuki danışmanlık ve temsil hizmeti sunar." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Abdul Samet Avukatlık Bürosu | Avukat</title>
+  <meta name="description" content="Abdul Samet Avukatlık Bürosu; ceza, aile, iş, ticaret, icra ve idare hukuku alanlarında profesyonel danışmanlık ve temsil hizmeti sunar." />
   <meta name="theme-color" content="#0b1f3a" />
 
-  <!-- Fonts (Google Fonts) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <!-- Başlıklar serif, metinler modern sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-  <!-- Top notice (optional) -->
-  <div class="topbar">
-    <div class="container topbar__inner">
-      <div class="topbar__left">
-        <span class="dot"></span>
-        <span>Profesyonel Hukuki Danışmanlık</span>
-      </div>
-      <div class="topbar__right">
-        <a class="topbar__link" href="tel:+90XXXXXXXXXX">+90 (XXX) XXX XX XX</a>
-        <span class="sep">•</span>
-        <a class="topbar__link" href="mailto:info@abdulsamet.av.tr">info@abdulsamet.av.tr</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Header -->
+  <!-- Topbar -->
   <header class="header" id="top">
     <div class="container header__inner">
       <a class="brand" href="#top" aria-label="Ana sayfa">
         <span class="brand__mark" aria-hidden="true">
-          <!-- scales icon -->
-          <svg viewBox="0 0 24 24" fill="none">
-            <path d="M12 3v18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-            <path d="M7 7h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-            <path d="M6 7 3.5 12h5L6 7Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
-            <path d="M18 7 15.5 12h5L18 7Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
-            <path d="M4 13c.4 1.4 1.7 2.3 3 2.3S9.6 14.4 10 13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-            <path d="M14 13c.4 1.4 1.7 2.3 3 2.3s2.6-.9 3-2.3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          <!-- Basit ikon -->
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3l8 4v6c0 5-3.5 8-8 8s-8-3-8-8V7l8-4Z" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M8.2 10.3h7.6M9.4 10.3l-2 6.2h9.2l-2-6.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
           </svg>
         </span>
         <span class="brand__text">
-          <span class="brand__title">Abdul Samet</span>
-          <span class="brand__sub">AVUKAT</span>
+          <span class="brand__name">Abdul Samet</span>
+          <span class="brand__role">AVUKAT</span>
         </span>
       </a>
 
-      <nav class="nav" aria-label="Ana menü">
-        <button class="nav__toggle" id="navToggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
+      <nav class="nav" aria-label="Ana Menü">
+        <button class="nav__toggle" type="button" aria-label="Menüyü aç/kapat" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
 
-        <ul class="nav__list" id="navList">
-          <li><a class="nav__link" href="#hakkimizda">Hakkımda</a></li>
-          <li><a class="nav__link" href="#hizmetler">Hizmetlerimiz</a></li>
-          <li><a class="nav__link" href="#uzmanlik">Uzmanlık Alanları</a></li>
-          <li><a class="nav__link" href="#nedenbiz">Neden Biz?</a></li>
-          <li>
-            <a class="btn btn--primary btn--phone" href="#iletisim">
-              <span class="btn__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M7 4h3l2 5-2 1c1 3 3 5 6 6l1-2 5 2v3c0 1-1 2-2 2-10 0-18-8-18-18 0-1 1-2 2-2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-                </svg>
-              </span>
-              İletişim
-            </a>
-          </li>
-        </ul>
+        <div class="nav__menu" data-menu>
+          <a href="#hakkimizda">Hakkımızda</a>
+          <a href="#hizmetler">Hizmetlerimiz</a>
+          <a href="#uzmanlik">Uzmanlık Alanları</a>
+          <a href="#nedenbiz">Neden Biz?</a>
+          <a class="btn btn--primary btn--sm" href="#iletisim">
+            <span class="btn__icon" aria-hidden="true">☎</span> İletişim
+          </a>
+        </div>
       </nav>
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- Hero -->
   <section class="hero">
     <div class="hero__bg" aria-hidden="true"></div>
     <div class="container hero__inner">
-      <div class="hero__content reveal">
-        <div class="pill">
-          <span class="pill__dot"></span>
-          <span>Profesyonel Hukuki Danışmanlık</span>
+      <div class="hero__content">
+        <div class="badge">
+          <span class="badge__dot" aria-hidden="true"></span>
+          Profesyonel Hukuki Danışmanlık
         </div>
 
         <h1 class="hero__title">
-          Hukuki Haklarınızı<br />
-          <span class="accent">Güvenle</span> Koruyoruz
+          Hukuki Haklarınızı <span class="accent">Güvenle</span> Koruyoruz
         </h1>
 
-        <p class="hero__text">
+        <p class="hero__desc">
           Abdul Samet Avukatlık Bürosu olarak, müvekkillerimize en üst düzeyde hukuki danışmanlık ve temsil hizmeti sunuyoruz.
-          Deneyimli yaklaşımımızla haklarınızı savunmak için yanınızdayız.
+          Deneyimli kadromuz ile haklarınızı savunmak için yanınızdayız.
         </p>
 
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="#iletisim">
-            Ücretsiz Danışma Alın
-            <span class="btn__arrow" aria-hidden="true">→</span>
-          </a>
-          <a class="btn btn--ghost" href="#hizmetler">
-            Hizmetlerimiz
-          </a>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#iletisim">Ücretsiz Danışma Alın</a>
+          <a class="btn btn--ghost" href="#hizmetler">Hizmetlerimiz</a>
         </div>
 
-        <div class="hero__stats">
+        <div class="stats">
           <div class="stat">
-            <div class="stat__num" data-count="15">15+</div>
+            <div class="stat__value">15+</div>
             <div class="stat__label">Yıllık Deneyim</div>
           </div>
           <div class="stat">
-            <div class="stat__num" data-count="500">500+</div>
+            <div class="stat__value">500+</div>
             <div class="stat__label">Başarılı Dava</div>
           </div>
           <div class="stat">
-            <div class="stat__num" data-count="98">%98</div>
+            <div class="stat__value">%98</div>
             <div class="stat__label">Müvekkil Memnuniyeti</div>
+          </div>
+          <div class="stat">
+            <div class="stat__value">24/7</div>
+            <div class="stat__label">Kesintisiz Destek</div>
           </div>
         </div>
       </div>
-
-      <div class="hero__hint" aria-hidden="true">
-        <div class="mouse"></div>
-      </div>
     </div>
+
+    <a class="scrollhint" href="#hakkimizda" aria-label="Aşağı kaydır">
+      <span class="scrollhint__mouse" aria-hidden="true"></span>
+    </a>
   </section>
 
-  <!-- ABOUT -->
+  <!-- About -->
   <section class="section" id="hakkimizda">
     <div class="container">
-      <div class="section__head center reveal">
-        <span class="badge">HAKKIMIZDA</span>
-        <h2 class="h2">Abdul Samet Avukatlık Bürosu</h2>
-        <p class="muted">
+      <div class="section__head center">
+        <div class="chip">HAKKIMIZDA</div>
+        <h2>Abdul Samet Avukatlık Bürosu</h2>
+        <p>
           Yılların deneyimi ve hukuka olan tutkumuzla, müvekkillerimize en kaliteli hukuki hizmeti sunmak için çalışıyoruz.
         </p>
       </div>
 
       <div class="about">
-        <div class="about__media reveal">
+        <div class="about__media">
           <img
-            src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=75"
+            src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80"
             alt="Adalet heykeli"
             loading="lazy"
           />
-          <div class="glow" aria-hidden="true"></div>
         </div>
 
-        <div class="about__content reveal">
-          <h3 class="h3">Deneyim ve Uzmanlık ile Yanınızdayız</h3>
+        <div class="about__content">
+          <h3>Deneyim ve Uzmanlık ile Yanınızdayız</h3>
           <p>
-            Abdul Samet Avukatlık Bürosu olarak, 2008 yılından bu yana müvekkillerimize hukuki danışmanlık ve dava takibi hizmeti vermekteyiz.
-            Bireysel ve kurumsal müvekkillerimizin ihtiyaçlarına etkin çözümler sunmayı hedefliyoruz.
+            Abdul Samet Avukatlık Bürosu olarak, yıllara dayanan tecrübemizle hukuki danışmanlık ve dava takibi hizmeti vermekteyiz.
+            Bireysel ve kurumsal müvekkillerimizin ihtiyaçlarına özel çözümler üretiyoruz.
           </p>
           <p>
-            Hukuk sisteminin karmaşıklığı içerisinde doğru yolu göstermek ve haklarınızı güçlü şekilde savunmak temel önceliğimizdir.
-            Modern hukuk anlayışını geleneksel değerlerle harmanlayarak, her dava için özgün stratejiler geliştiriyoruz.
-          </p>
-          <p class="muted">
-            Ekibimiz, sürekli gelişen hukuki mevzuatı yakından takip ederek, güncel ve doğru bilgiyi müvekkillerimize sunar.
+            Hukuk sisteminin karmaşıklığı içinde, doğru yolu göstermek ve haklarınızı etkili şekilde savunmak önceliğimizdir.
+            Her dosyaya stratejik yaklaşır, süreci şeffaf şekilde yönetiriz.
           </p>
 
-          <div class="personcard">
+          <div class="signature">
             <div class="avatar">AS</div>
             <div>
-              <div class="personcard__name">Abdul Samet</div>
-              <div class="personcard__role">Kurucu Avukat</div>
+              <div class="signature__name">Abdul Samet</div>
+              <div class="signature__role">Kurucu Avukat</div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="valuegrid">
-        <div class="vcard reveal">
-          <div class="vcard__icon">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M12 3l7 4v6c0 5-3 8-7 8s-7-3-7-8V7l7-4Z" stroke="currentColor" stroke-width="1.6"/>
-            </svg>
+          <div class="value-grid">
+            <div class="value-card">
+              <div class="value-card__icon">🛡️</div>
+              <div class="value-card__title">Güvenilirlik</div>
+              <div class="value-card__text">Etik ilkeler ve gizlilik esasına bağlı hizmet.</div>
+            </div>
+            <div class="value-card">
+              <div class="value-card__icon">⭐</div>
+              <div class="value-card__title">Profesyonellik</div>
+              <div class="value-card__text">Düzenli bilgilendirme ve titiz dosya takibi.</div>
+            </div>
+            <div class="value-card">
+              <div class="value-card__icon">🤝</div>
+              <div class="value-card__title">Müvekkil Odaklı</div>
+              <div class="value-card__text">İhtiyacınıza göre net, uygulanabilir çözümler.</div>
+            </div>
+            <div class="value-card">
+              <div class="value-card__icon">🎯</div>
+              <div class="value-card__title">Sonuç Odaklı</div>
+              <div class="value-card__text">Haklarınızı korumaya yönelik stratejik yaklaşım.</div>
+            </div>
           </div>
-          <h4>Güvenilirlik</h4>
-          <p>Müvekkillerimize karşı en yüksek etik standartlarda hizmet sunuyoruz.</p>
-        </div>
-
-        <div class="vcard reveal">
-          <div class="vcard__icon">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M8 10a4 4 0 1 1 8 0v2h2v8H6v-8h2v-2Z" stroke="currentColor" stroke-width="1.6"/>
-            </svg>
-          </div>
-          <h4>Profesyonellik</h4>
-          <p>Alanında uzman kadromuzla kaliteli hukuki destek sağlıyoruz.</p>
-        </div>
-
-        <div class="vcard reveal">
-          <div class="vcard__icon">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Z" stroke="currentColor" stroke-width="1.6"/>
-              <path d="M4 21c1.5-4 5-6 8-6s6.5 2 8 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h4>Müvekkil Odaklı</h4>
-          <p>Her müvekkilimizin ihtiyaçlarına özel çözümler geliştiriyoruz.</p>
-        </div>
-
-        <div class="vcard reveal">
-          <div class="vcard__icon">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M6 20V10l6-6 6 6v10" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-              <path d="M10 20v-6h4v6" stroke="currentColor" stroke-width="1.6"/>
-            </svg>
-          </div>
-          <h4>Sonuç Odaklı</h4>
-          <p>Davalarda en iyi sonuçları elde etmek için stratejik ilerliyoruz.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICES -->
+  <!-- Services -->
   <section class="section section--soft" id="hizmetler">
     <div class="container">
-      <div class="section__head center reveal">
-        <span class="badge">HİZMETLERİMİZ</span>
-        <h2 class="h2">Geniş Kapsamlı Hukuki Hizmetler</h2>
-        <p class="muted">Hukukun her alanında uzman yaklaşımımızla kapsamlı hukuki destek sunuyoruz.</p>
+      <div class="section__head center">
+        <div class="chip">HİZMETLERİMİZ</div>
+        <h2>Geniş Kapsamlı Hukuki Hizmetler</h2>
+        <p>Hukukun her alanında, müvekkillerimize kapsamlı hukuki destek sunuyoruz.</p>
       </div>
 
-      <div class="servicegrid">
-        <!-- row 1 -->
-        <article class="scard reveal">
-          <div class="scard__head">
-            <div class="icbox">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M12 2l9 5-9 5-9-5 9-5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-                <path d="M3 7v10l9 5 9-5V7" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-              </svg>
-            </div>
+      <div class="cards">
+        <article class="card">
+          <div class="card__top">
+            <div class="card__icon">⚖️</div>
             <h3>Ceza Hukuku</h3>
           </div>
-          <p>Ceza davalarında müvekkil haklarının korunması, savunma ve müdafilik hizmetleri.</p>
-          <ul class="bullets">
-            <li>Savunma</li><li>Müdafilik</li><li>Temyiz</li><li>İade-i İtibar</li>
+          <p>Ceza soruşturma ve kovuşturma süreçlerinde etkin savunma ve temsil.</p>
+          <ul class="list">
+            <li>Savunma</li>
+            <li>Müdafilik</li>
+            <li>Temyiz / İstinaf</li>
+            <li>İade-i itibar</li>
           </ul>
         </article>
 
-        <article class="scard reveal">
-          <div class="scard__head">
-            <div class="icbox">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M7 10a5 5 0 0 1 10 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-                <path d="M5 21c1-5 4-7 7-7s6 2 7 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-                <path d="M12 12a4 4 0 1 0-4-4" stroke="currentColor" stroke-width="1.6"/>
-              </svg>
-            </div>
+        <article class="card">
+          <div class="card__top">
+            <div class="card__icon">👨‍👩‍👧‍👦</div>
             <h3>Aile Hukuku</h3>
           </div>
-          <p>Boşanma, velayet, nafaka ve evlilik sözleşmesi gibi konularda danışmanlık.</p>
-          <ul class="bullets">
-            <li>Boşanma Davaları</li><li>Velayet Davaları</li><li>Nafaka</li><li>Mal Paylaşımı</li>
+          <p>Boşanma, velayet, nafaka ve mal paylaşımı süreçlerinde danışmanlık.</p>
+          <ul class="list">
+            <li>Boşanma Davaları</li>
+            <li>Velayet Davaları</li>
+            <li>Nafaka</li>
+            <li>Mal Paylaşımı</li>
           </ul>
         </article>
 
-        <article class="scard reveal">
-          <div class="scard__head">
-            <div class="icbox">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M7 7h10v10H7V7Z" stroke="currentColor" stroke-width="1.6"/>
-                <path d="M9 7V5h6v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-                <path d="M9 17v2h6v-2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-              </svg>
-            </div>
+        <article class="card">
+          <div class="card__top">
+            <div class="card__icon">🏢</div>
             <h3>Ticaret Hukuku</h3>
           </div>
-          <p>Şirket kuruluşu, ticari sözleşmeler ve ticari uyuşmazlıklarda profesyonel destek.</p>
-          <ul class="bullets">
-            <li>Şirket Hukuku</li><li>Sözleşmeler</li><li>Ticari Davalar</li><li>İflas</li>
+          <p>Şirket süreçleri ve ticari uyuşmazlıklarda profesyonel hukuki destek.</p>
+          <ul class="list">
+            <li>Şirketler Hukuku</li>
+            <li>Sözleşmeler</li>
+            <li>Ticari Davalar</li>
+            <li>İflas</li>
           </ul>
         </article>
 
-        <article class="scard reveal">
-          <div class="scard__head">
-            <div class="icbox">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M4 10l8-6 8 6v10H4V10Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-                <path d="M9 20v-6h6v6" stroke="currentColor" stroke-width="1.6"/>
-              </svg>
-            </div>
+        <article class="card">
+          <div class="card__top">
+            <div class="card__icon">🏠</div>
             <h3>Gayrimenkul Hukuku</h3>
           </div>
-          <p>Tapu işlemleri, kira anlaşmazlıkları ve gayrimenkul alım-satım süreçlerinde hizmet.</p>
-          <ul class="bullets">
-            <li>Tapu İşlemleri</li><li>Kira Davaları</li><li>İmar Hukuku</li><li>Kamulaştırma</li>
+          <p>Tapu işlemleri, kira uyuşmazlıkları ve kamulaştırma süreçleri.</p>
+          <ul class="list">
+            <li>Tapu İşlemleri</li>
+            <li>Kira Davaları</li>
+            <li>İmar Hukuku</li>
+            <li>Kamulaştırma</li>
           </ul>
         </article>
 
-        <!-- row 2 -->
-        <article class="scard reveal">
-          <div class="scard__head">
-            <div class="icbox">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M6 7h12v14H6V7Z" stroke="currentColor" stroke-width="1.6"/>
-                <path d="M9 3h6v4H9V3Z" stroke="currentColor" stroke-width="1.6"/>
-              </svg>
-            </div>
+        <article class="card">
+          <div class="card__top">
+            <div class="card__icon">🧾</div>
             <h3>İş Hukuku</h3>
           </div>
-          <p>İşçi-işveren ilişkileri, sözleşmeler ve iş kazalarında hukuki danışmanlık.</p>
-          <ul class="bullets">
-            <li>İş Sözleşmeleri</li><li>İşe İade</li><li>İş Kazaları</li><li>Tazminatlar</li>
+          <p>İşçi-işveren ilişkileri, sözleşmeler, tazminat ve işe iade süreçleri.</p>
+          <ul class="list">
+            <li>İş Sözleşmeleri</li>
+            <li>İşe İade</li>
+            <li>İş Kazaları</li>
+            <li>Tazminatlar</li>
           </ul>
         </article>
 
-        <article class="scard reveal">
-          <div class="scard__head">
-            <div class="icbox">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M8 5h8v14H8V5Z" stroke="currentColor" stroke-width="1.6"/>
-                <path d="M10 9h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-                <path d="M10 13h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-              </svg>
-            </div>
+        <article class="card">
+          <div class="card__top">
+            <div class="card__icon">📜</div>
             <h3>Miras Hukuku</h3>
           </div>
-          <p>Miras paylaşımı, vasiyet ve miras reddi gibi konularda hukuki destek.</p>
-          <ul class="bullets">
-            <li>Miras Paylaşımı</li><li>Vasiyet</li><li>Miras Reddi</li><li>Mirasçılık</li>
+          <p>Miras paylaşımı, vasiyet ve mirasın reddi konularında danışmanlık.</p>
+          <ul class="list">
+            <li>Miras Paylaşımı</li>
+            <li>Vasiyet</li>
+            <li>Mirasın Reddi</li>
+            <li>Mirasçılık</li>
           </ul>
         </article>
 
-        <article class="scard reveal">
-          <div class="scard__head">
-            <div class="icbox">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M7 8h10v12H7V8Z" stroke="currentColor" stroke-width="1.6"/>
-                <path d="M9 8V5h6v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-                <path d="M9 12h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-              </svg>
-            </div>
+        <article class="card">
+          <div class="card__top">
+            <div class="card__icon">💳</div>
             <h3>Borçlar Hukuku</h3>
           </div>
-          <p>Sözleşme hukuku, tazminat davaları ve borçların tahsili konularında destek.</p>
-          <ul class="bullets">
-            <li>Sözleşmeler</li><li>Tazminat</li><li>İcra Takibi</li><li>Alacak Tahsili</li>
+          <p>Sözleşme hukuku ve tazminat davalarında kapsamlı destek.</p>
+          <ul class="list">
+            <li>Sözleşmeler</li>
+            <li>Tazminat</li>
+            <li>İcra Takibi</li>
+            <li>Alacak Tahsili</li>
           </ul>
         </article>
 
-        <article class="scard reveal">
-          <div class="scard__head">
-            <div class="icbox">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M4 10h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-                <path d="M6 10V6l6-3 6 3v4" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-                <path d="M6 10v10h12V10" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-              </svg>
-            </div>
+        <article class="card">
+          <div class="card__top">
+            <div class="card__icon">🏛️</div>
             <h3>İdare Hukuku</h3>
           </div>
-          <p>İdari davalar, kamu ihaleleri ve kamu personeli sorunlarında yardım.</p>
-          <ul class="bullets">
-            <li>İdari Davalar</li><li>İhaleler</li><li>Memur Hukuku</li><li>İptal Davaları</li>
+          <p>İdari işlemler ve kamu uyuşmazlıklarında hukuki danışmanlık.</p>
+          <ul class="list">
+            <li>İdari Davalar</li>
+            <li>İhaleler</li>
+            <li>Memur Hukuku</li>
+            <li>İptal Davaları</li>
           </ul>
         </article>
       </div>
 
-      <div class="cta reveal">
-        <div class="cta__inner">
+      <div class="cta-band">
+        <div>
           <h3>Hukuki Danışmanlığa İhtiyacınız mı Var?</h3>
-          <p>Uzman yaklaşımımızla size en uygun çözümü birlikte belirleyelim. Ücretsiz ön görüşme için hemen iletişime geçin.</p>
-          <a class="btn btn--primary" href="#iletisim">Ücretsiz Danışma Talep Edin <span class="btn__arrow">→</span></a>
+          <p>Uzman kadromuz sizin için en uygun çözümü bulmaya hazır. Ücretsiz ön görüşme için hemen iletişime geçin.</p>
         </div>
+        <a class="btn btn--primary" href="#iletisim">Ücretsiz Danışma Talep Edin</a>
       </div>
     </div>
   </section>
 
-  <!-- EXPERTISE -->
+  <!-- Expertise -->
   <section class="section" id="uzmanlik">
     <div class="container">
-      <div class="section__head center reveal">
-        <span class="badge">UZMANLIK ALANLARI</span>
-        <h2 class="h2">Kapsamlı Hukuki Çözümler</h2>
-        <p class="muted">Hukukun farklı dallarında sunduğumuz profesyonel hizmetlerimiz ile yanınızdayız.</p>
+      <div class="section__head center">
+        <div class="chip">UZMANLIK ALANLARI</div>
+        <h2>Kapsamlı Hukuki Çözümler</h2>
+        <p>Hukukun farklı dallarında sunduğumuz profesyonel hizmetlerimiz ile yanınızdayız.</p>
       </div>
 
-      <div class="triples">
-        <div class="tcard reveal">
+      <div class="mini-cards">
+        <div class="mini-card">
           <h3>Dava Takibi</h3>
-          <ul class="checks">
-            <li>İlk derece mahkemelerinde dava takibi</li>
-            <li>Temyiz ve istinaf aşamalarında temsil</li>
+          <ul class="list list--mini">
+            <li>İlk derece mahkemeleri</li>
+            <li>Temyiz ve istinaf</li>
             <li>İcra ve iflas takibi</li>
-            <li>Uzlaştırma süreçleri</li>
+            <li>Arabuluculuk süreçleri</li>
           </ul>
         </div>
-
-        <div class="tcard reveal">
+        <div class="mini-card">
           <h3>Hukuki Danışmanlık</h3>
-          <ul class="checks">
-            <li>Sürekli hukuki danışmanlık hizmetleri</li>
-            <li>Sözleşme hazırlama ve inceleme</li>
+          <ul class="list list--mini">
+            <li>Sürekli danışmanlık</li>
+            <li>Sözleşme inceleme</li>
             <li>Hukuki görüş yazıları</li>
-            <li>Risk analizi ve önleyici hukuk</li>
+            <li>Risk analizi</li>
           </ul>
         </div>
-
-        <div class="tcard reveal">
+        <div class="mini-card">
           <h3>Arabuluculuk</h3>
-          <ul class="checks">
-            <li>Ticari uyuşmazlıklarda arabuluculuk</li>
-            <li>Aile hukuku arabuluculuk</li>
-            <li>İş hukuku arabuluculuk</li>
-            <li>Alternatif uyuşmazlık çözümleri</li>
+          <ul class="list list--mini">
+            <li>Ticari uyuşmazlıklar</li>
+            <li>Aile uyuşmazlıkları</li>
+            <li>İş uyuşmazlıkları</li>
+            <li>Alternatif çözümler</li>
           </ul>
         </div>
       </div>
 
-      <div class="featured reveal">
-        <div class="featured__img">
+      <div class="feature">
+        <div class="feature__media">
           <img
-            src="https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?auto=format&fit=crop&w=1400&q=75"
-            alt="Adliye binası"
+            src="https://images.unsplash.com/photo-1528747045269-390fe33c19b1?auto=format&fit=crop&w=1200&q=80"
+            alt="Mahkeme binası"
             loading="lazy"
           />
         </div>
-        <div class="featured__text">
-          <h3 class="h3">Deneyimli ve Güvenilir Hukuki Destek</h3>
+        <div class="feature__content">
+          <h3>Deneyimli ve Güvenilir Hukuki Destek</h3>
           <p>
-            15 yılı aşkın deneyimimiz ve yüzlerce dosyada edindiğimiz pratik ile her süreci şeffaf, planlı ve sonuç odaklı yönetiyoruz.
-            Müvekkil ilişkilerinde iletişimi güçlü tutar, gelişmeleri düzenli aktarırız.
+            Tecrübemiz ve disiplinli süreç yönetimimiz ile her dosyada maksimum özenle çalışırız.
+            Müvekkillerimizi süreç boyunca düzenli bilgilendirir, kararları birlikte planlarız.
           </p>
           <p class="muted">
-            Her dosya için “tek tip” değil; olayın dinamiğine uygun strateji oluşturur, delil ve süreç yönetimini profesyonel yürütürüz.
+            Not: Bu sayfadaki istatistik ve örnek bilgiler (15+, 500+, %98) isterseniz sizin gerçek rakamlarınıza göre güncellenebilir.
           </p>
+          <a class="btn btn--ghost" href="#iletisim">Hemen İletişime Geçin</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- WHY US -->
+  <!-- Why Us -->
   <section class="section section--soft" id="nedenbiz">
     <div class="container">
-      <div class="section__head center reveal">
-        <span class="badge">NEDEN BİZ?</span>
-        <h2 class="h2">Abdul Samet Avukatlık'ı Seçmeniz için Nedenler</h2>
-        <p class="muted">Müvekkillerimize sunduğumuz değerler ve profesyonel yaklaşımımızla fark yaratıyoruz.</p>
+      <div class="section__head center">
+        <div class="chip">NEDEN BİZ?</div>
+        <h2>Seçmeniz için Nedenler</h2>
+        <p>Müvekkillerimize sunduğumuz değerler ve profesyonel yaklaşımımızla fark yaratıyoruz.</p>
       </div>
 
-      <div class="whygrid">
-        <div class="whycard reveal">
-          <div class="whycard__icon">⏱</div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-card__icon">⏱️</div>
           <h3>7/24 Erişilebilirlik</h3>
           <p>Acil durumlarda müvekkillerimize kesintisiz hukuki destek sağlıyoruz.</p>
         </div>
-
-        <div class="whycard reveal">
-          <div class="whycard__icon">🛡</div>
+        <div class="why-card">
+          <div class="why-card__icon">🛡️</div>
           <h3>Güçlü Savunma</h3>
-          <p>Deneyimli yaklaşımımızla haklarınızı en güçlü şekilde savunuyoruz.</p>
+          <p>Haklarınızı en güçlü şekilde savunmak için stratejik yaklaşım geliştiriyoruz.</p>
         </div>
-
-        <div class="whycard reveal">
-          <div class="whycard__icon">📈</div>
+        <div class="why-card">
+          <div class="why-card__icon">📈</div>
           <h3>Yüksek Başarı Oranı</h3>
-          <p>Stratejik süreç yönetimiyle olumlu sonuç alma oranını yükseltiyoruz.</p>
+          <p>Müvekkil memnuniyetine dayalı, sonuç odaklı dosya yönetimi.</p>
         </div>
-
-        <div class="whycard reveal">
-          <div class="whycard__icon">🤝</div>
+        <div class="why-card">
+          <div class="why-card__icon">💛</div>
           <h3>Empatik Yaklaşım</h3>
-          <p>İhtiyaçlarınızı anlayarak çözüm odaklı ve güven veren bir süreç yürütürüz.</p>
+          <p>Sorunlarınızı anlayarak çözüm odaklı, insani bir iletişim kuruyoruz.</p>
         </div>
-
-        <div class="whycard reveal">
-          <div class="whycard__icon">💬</div>
+        <div class="why-card">
+          <div class="why-card__icon">💬</div>
           <h3>Şeffaf İletişim</h3>
-          <p>Dava süreçlerinde düzenli bilgilendirme yapar, belirsizliği azaltırız.</p>
+          <p>Süreç hakkında düzen surrounded bilgilendirme ve net yol haritası.</p>
         </div>
-
-        <div class="whycard reveal">
-          <div class="whycard__icon">🎓</div>
+        <div class="why-card">
+          <div class="why-card__icon">👥</div>
           <h3>Uzman Kadro</h3>
-          <p>Alanında uzman iş ortaklarımızla bütüncül hukuki hizmet sunarız.</p>
+          <p>Alanında uzman ekip ile her konuya profesyonel bakış.</p>
         </div>
       </div>
 
-      <div class="numbers reveal" role="group" aria-label="İstatistikler">
-        <div class="numbers__item">
-          <div class="numbers__num">15+</div>
-          <div class="numbers__lbl">Yıllık Deneyim</div>
+      <div class="metrics">
+        <div class="metric">
+          <div class="metric__value">15+</div>
+          <div class="metric__label">Yıllık Deneyim</div>
         </div>
-        <div class="numbers__item">
-          <div class="numbers__num">500+</div>
-          <div class="numbers__lbl">Başarılı Dava</div>
+        <div class="metric">
+          <div class="metric__value">500+</div>
+          <div class="metric__label">Başarılı Dava</div>
         </div>
-        <div class="numbers__item">
-          <div class="numbers__num">%98</div>
-          <div class="numbers__lbl">Memnuniyet</div>
+        <div class="metric">
+          <div class="metric__value">%98</div>
+          <div class="metric__label">Memnuniyet</div>
         </div>
-        <div class="numbers__item">
-          <div class="numbers__num">24/7</div>
-          <div class="numbers__lbl">Kesintisiz Destek</div>
+        <div class="metric">
+          <div class="metric__value">24/7</div>
+          <div class="metric__label">Destek</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- Contact -->
   <section class="section" id="iletisim">
     <div class="container">
-      <div class="section__head center reveal">
-        <span class="badge">İLETİŞİM</span>
-        <h2 class="h2">Bizimle İletişime Geçin</h2>
-        <p class="muted">Hukuki danışmanlık almak veya süreciniz hakkında bilgi almak için bize ulaşabilirsiniz.</p>
+      <div class="section__head center">
+        <div class="chip">İLETİŞİM</div>
+        <h2>Bizimle İletişime Geçin</h2>
+        <p>Hukuki danışmanlık almak veya dava süreçleriniz hakkında bilgi almak için bizimle iletişime geçebilirsiniz.</p>
       </div>
 
       <div class="contact">
-        <div class="contact__left reveal">
-          <div class="infocard">
-            <div class="infocard__icon">📞</div>
+        <aside class="contact__side">
+          <div class="info-card">
+            <div class="info-card__icon">📞</div>
             <div>
-              <div class="infocard__label">Telefon</div>
-              <a class="infocard__value" href="tel:+90XXXXXXXXXX">+90 (XXX) XXX XX XX</a>
+              <div class="info-card__title">Telefon</div>
+              <div class="info-card__text">+90 (XXX) XXX XX XX</div>
             </div>
           </div>
 
-          <div class="infocard reveal">
-            <div class="infocard__icon">✉️</div>
+          <div class="info-card">
+            <div class="info-card__icon">✉️</div>
             <div>
-              <div class="infocard__label">E-posta</div>
-              <a class="infocard__value" href="mailto:info@abdulsamet.av.tr">info@abdulsamet.av.tr</a>
+              <div class="info-card__title">E-posta</div>
+              <div class="info-card__text">info@abdulsamet.av.tr</div>
             </div>
           </div>
 
-          <div class="infocard reveal">
-            <div class="infocard__icon">📍</div>
+          <div class="info-card">
+            <div class="info-card__icon">📍</div>
             <div>
-              <div class="infocard__label">Adres</div>
-              <div class="infocard__value">Ankara, Türkiye</div>
+              <div class="info-card__title">Adres</div>
+              <div class="info-card__text">Ankara, Türkiye</div>
             </div>
           </div>
 
-          <div class="infocard reveal">
-            <div class="infocard__icon">🕘</div>
+          <div class="info-card">
+            <div class="info-card__icon">🕘</div>
             <div>
-              <div class="infocard__label">Çalışma Saatleri</div>
-              <div class="infocard__value">Pzt-Cum: 09:00 – 18:00</div>
+              <div class="info-card__title">Çalışma Saatleri</div>
+              <div class="info-card__text">Pzt-Cum: 09:00 – 18:00</div>
             </div>
           </div>
 
-          <div class="emergency reveal">
+          <div class="emergency">
             <div class="emergency__title">Acil Durum Hattı</div>
             <div class="emergency__text">Acil hukuki destek için 7/24 ulaşabilirsiniz.</div>
-            <a class="emergency__phone" href="tel:+90XXXXXXXXXX">+90 (XXX) XXX XX XX</a>
+            <a class="emergency__phone" href="tel:+900000000000">+90 (XXX) XXX XX XX</a>
           </div>
-        </div>
+        </aside>
 
-        <div class="contact__right reveal">
-          <form class="form" id="contactForm">
-            <h3 class="form__title">Mesaj Gönder</h3>
+        <form class="form" id="contactForm" novalidate>
+          <h3>Mesaj Gönder</h3>
 
-            <div class="form__row">
-              <div class="field">
-                <label for="name">Ad Soyad *</label>
-                <input id="name" name="name" type="text" placeholder="Adınızı ve soyadınızı girin" required />
-              </div>
-              <div class="field">
-                <label for="email">E-posta *</label>
-                <input id="email" name="email" type="email" placeholder="E-posta adresinizi girin" required />
-              </div>
-            </div>
-
-            <div class="form__row">
-              <div class="field">
-                <label for="phone">Telefon</label>
-                <input id="phone" name="phone" type="tel" placeholder="Telefon numaranızı girin" />
-              </div>
-              <div class="field">
-                <label for="subject">Konu *</label>
-                <input id="subject" name="subject" type="text" placeholder="Mesajınızın konusu" required />
-              </div>
-            </div>
-
-            <div class="field">
-              <label for="message">Mesajınız *</label>
-              <textarea id="message" name="message" rows="6" placeholder="Hukuki danışmanlık almak istediğiniz konuyu detaylı şekilde açıklayın..." required></textarea>
-            </div>
-
-            <button class="btn btn--primary btn--wide" type="submit">
-              Mesaj Gönder <span class="btn__arrow">→</span>
-            </button>
-
-            <p class="form__note">* işaretli alanlar zorunludur. Kişisel bilgileriniz gizli tutulacaktır.</p>
-            <p class="form__ok" id="formOk" hidden>Mesajınız alındı. En kısa sürede dönüş yapılacaktır.</p>
-          </form>
-        </div>
-      </div>
-
-      <div class="footer reveal">
-        <div class="footer__grid">
-          <div class="footer__brand">
-            <div class="brand brand--footer">
-              <span class="brand__mark" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M12 3v18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                  <path d="M7 7h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                  <path d="M6 7 3.5 12h5L6 7Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
-                  <path d="M18 7 15.5 12h5L18 7Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
-                  <path d="M4 13c.4 1.4 1.7 2.3 3 2.3S9.6 14.4 10 13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-                  <path d="M14 13c.4 1.4 1.7 2.3 3 2.3s2.6-.9 3-2.3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-                </svg>
-              </span>
-              <span class="brand__text">
-                <span class="brand__title">Abdul Samet</span>
-                <span class="brand__sub">AVUKAT</span>
-              </span>
-            </div>
-            <p class="footer__desc">
-              Müvekkillerimize en üst düzeyde hukuki danışmanlık ve temsil sunuyor, haklarınızı korumak için yanınızda yer alıyoruz.
-            </p>
-
-            <div class="social">
-              <a href="#" aria-label="Facebook">f</a>
-              <a href="#" aria-label="X">x</a>
-              <a href="#" aria-label="LinkedIn">in</a>
-              <a href="#" aria-label="Instagram">ig</a>
-            </div>
+          <div class="form__row">
+            <label>
+              <span>Ad Soyad *</span>
+              <input name="name" type="text" placeholder="Adınızı ve soyadınızı girin" required />
+            </label>
+            <label>
+              <span>E-posta *</span>
+              <input name="email" type="email" placeholder="E-posta adresinizi girin" required />
+            </label>
           </div>
 
-          <div>
-            <h4>Hızlı Bağlantılar</h4>
-            <ul>
-              <li><a href="#hakkimizda">Hakkımda</a></li>
-              <li><a href="#hizmetler">Hizmetlerimiz</a></li>
-              <li><a href="#uzmanlik">Uzmanlık Alanları</a></li>
-              <li><a href="#iletisim">İletişim</a></li>
-            </ul>
+          <div class="form__row">
+            <label>
+              <span>Telefon</span>
+              <input name="phone" type="tel" placeholder="Telefon numaranızı girin" />
+            </label>
+            <label>
+              <span>Konu *</span>
+              <input name="subject" type="text" placeholder="Mesajınızın konusu" required />
+            </label>
           </div>
 
-          <div>
-            <h4>Hizmetlerimiz</h4>
-            <ul>
-              <li><a href="#hizmetler">Ceza Hukuku</a></li>
-              <li><a href="#hizmetler">Aile Hukuku</a></li>
-              <li><a href="#hizmetler">Ticaret Hukuku</a></li>
-              <li><a href="#hizmetler">Gayrimenkul Hukuku</a></li>
-              <li><a href="#hizmetler">İş Hukuku</a></li>
-              <li><a href="#hizmetler">Miras Hukuku</a></li>
-            </ul>
-          </div>
+          <label>
+            <span>Mesajınız *</span>
+            <textarea name="message" rows="6" placeholder="Hukuki danışmanlık almak istediğiniz konuyu detaylı şekilde açıklayın..." required></textarea>
+          </label>
 
-          <div>
-            <h4>İletişim</h4>
-            <ul class="footer__contact">
-              <li><span>Telefon:</span> <a href="tel:+90XXXXXXXXXX">+90 (XXX) XXX XX XX</a></li>
-              <li><span>E-posta:</span> <a href="mailto:info@abdulsamet.av.tr">info@abdulsamet.av.tr</a></li>
-              <li><span>Adres:</span> Ankara, Türkiye</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="footer__bottom">
-          <span>© <span id="year"></span> Abdul Samet Avukatlık Bürosu. Tüm hakları saklıdır.</span>
-          <div class="footer__links">
-            <a href="#">Gizlilik Politikası</a>
-            <a href="#">Kullanım Koşulları</a>
-          </div>
-        </div>
+          <button class="btn btn--primary btn--full" type="submit">Mesaj Gönder</button>
+          <p class="form__note">* işaretli alanlar zorunludur. Kişisel bilgileriniz gizli tutulacaktır.</p>
+          <p class="form__status" id="formStatus" aria-live="polite"></p>
+        </form>
       </div>
     </div>
   </section>
 
-  <a class="toTop" href="#top" aria-label="Yukarı çık">↑</a>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <div class="brand brand--footer">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 3l8 4v6c0 5-3.5 8-8 8s-8-3-8-8V7l8-4Z" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M8.2 10.3h7.6M9.4 10.3l-2 6.2h9.2l-2-6.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="brand__text">
+            <span class="brand__name">Abdul Samet</span>
+            <span class="brand__role">AVUKAT</span>
+          </span>
+        </div>
+        <p class="footer__desc">
+          Haklarınızı korumak için yanınızdayız. Hukuki danışmanlık ve dava takibinde profesyonel destek.
+        </p>
 
-  <script src="script.js"></script>
+        <div class="social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Twitter">x</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Instagram">ig</a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Hızlı Bağlantılar</h4>
+        <a href="#hakkimizda">Hakkımızda</a>
+        <a href="#hizmetler">Hizmetlerimiz</a>
+        <a href="#uzmanlik">Uzmanlık Alanları</a>
+        <a href="#iletisim">İletişim</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Hizmetlerimiz</h4>
+        <a href="#hizmetler">Ceza Hukuku</a>
+        <a href="#hizmetler">Aile Hukuku</a>
+        <a href="#hizmetler">Ticaret Hukuku</a>
+        <a href="#hizmetler">İş Hukuku</a>
+        <a href="#hizmetler">İcra / Alacak</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>İletişim</h4>
+        <div class="footer__line"><span>📞</span> +90 (XXX) XXX XX XX</div>
+        <div class="footer__line"><span>✉️</span> info@abdulsamet.av.tr</div>
+        <div class="footer__line"><span>📍</span> Ankara, Türkiye</div>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <div>© <span id="year"></span> Abdul Samet Avukatlık Bürosu. Tüm hakları saklıdır.</div>
+      <div class="footer__links">
+        <a href="#">Gizlilik Politikası</a>
+        <a href="#">Kullanım Koşulları</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./main.js"></script>
 </body>
 </html>
