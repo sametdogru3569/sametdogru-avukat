@@ -105,38 +105,6 @@ a {
     margin: 15px 0 0 0;
 }
 
-/* Üst Bar (Topbar) */
-.top-bar {
-    background-color: var(--primary-color);
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.85rem;
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.top-bar-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.top-info span {
-    margin-right: 20px;
-}
-
-.top-info i {
-    color: var(--accent-color);
-    margin-right: 6px;
-}
-
-.top-social a {
-    margin-left: 15px;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.top-social a:hover {
-    color: var(--accent-color);
-}
 
 /* Navigasyon Alanı */
 .navbar {
