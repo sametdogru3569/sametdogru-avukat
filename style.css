@@ -208,47 +208,68 @@ a {
     display: none;
 }
 
-/* Hero / Büyük Afiş Alanı */
+/* ==========================================================================
+   Hero / Büyük Afiş Alanı (Yeni Adalet Temalı & Modern)
+   ========================================================================== */
 .hero {
     position: relative;
-    /* Klasik heykel resmi yerine modern, şık ve kurumsal bir plaza/ofis görseli ekledik */
-    background: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600') center/cover no-repeat;
-    padding: 180px 0; /* Alanı biraz daha genişleterek ferahlattık */
+    /* Adalet, hukuk kitapları ve terazi temalı modern, yüksek kaliteli premium görsel */
+    background: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1600') center/cover no-repeat;
+    padding: 160px 0;
     color: var(--white);
     text-align: center;
+    overflow: hidden;
 }
 
 .hero-overlay {
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    /* Renk karmaşasını engellemek için arkadaki resmi asilce gölgeleyen şeffaf gece mavisi geçişi */
-    background: linear-gradient(180deg, rgba(11, 31, 58, 0.85) 0%, rgba(11, 31, 58, 0.95) 100%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Görseli asilce örten ve yazıların okunmasını sağlayan kurumsal lacivert/gece mavisi katman */
+    background: linear-gradient(180deg, rgba(10, 25, 47, 0.82) 0%, rgba(10, 25, 47, 0.92) 100%);
     z-index: 1;
 }
 
 .hero-title {
     font-family: var(--font-heading);
-    font-size: 3.8rem; /* Başlığı biraz daha belirgin hale getirdik */
+    font-size: 3.5rem;
     font-weight: 700;
     line-height: 1.3;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     letter-spacing: -0.5px;
+    position: relative;
+    z-index: 2;
 }
 
-/* Kelimelerin farklı renklerde parlamasını engelleyerek tüm başlığı beyaz yapıyoruz */
+/* Farklı renk karmaşasını bitirmek için em etiketindeki sarı rengi kaldırıp beyaz yapıyoruz */
 .hero-title em {
-    font-style: italic;
-    color: inherit; /* Altın sarısı yerine ana başlık rengini (beyazı) miras alır */
+    font-style: normal;
+    color: var(--white); 
 }
 
-/* Şıklık katacak yeni bir detay alt başlık stili ekliyoruz */
+/* Açıklama yazısının stilini netleştiriyoruz */
 .hero-text {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.85);
-    max-width: 650px;
-    margin: 0 auto 40px;
-    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto 35px;
+    line-height: 1.7;
+    position: relative;
+    z-index: 2;
 }
+
+.hero-subtitle {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-buttons {
+    position: relative;
+    z-index: 2;
+}
+
 .btn {
     display: inline-block;
     padding: 14px 32px;
