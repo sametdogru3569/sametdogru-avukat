@@ -209,29 +209,30 @@ a {
 }
 
 /* ==========================================================================
-   Hero / Büyük Afiş Alanı (Sağ Tarafı Net Terazi & Hukuk Odaklı)
+   Hero / Büyük Afiş Alanı (Sağ Tarafta Net, Parlak Altın Terazi Odaklı)
    ========================================================================== */
 .hero {
     position: relative;
-    /* Sağ tarafında loş ışıkta parlayan modern adalet terazisi ve hukuk kitapları olan elit görsel */
-    background: url('https://images.unsplash.com/photo-1455434751176-ff1552056d9c?q=80&w=1600') center/cover no-repeat;
-    padding: 170px 0;
+    /* Sağ tarafta loş arka planda keskin, altın renkli modern bir adalet terazisi odaklı premium görsel */
+    background: url('https://images.unsplash.com/photo-1505663912202-ac22d4cb3707?q=80&w=1600') center/cover no-repeat;
+    padding: 180px 0;
     color: var(--white);
-    text-align: left; /* Yazıları sola yaslayarak sağdaki terazinin önünü tamamen açıyoruz */
+    text-align: left; /* Yazıları sola yaslayarak sağdaki şık terazinin önünü tamamen açıyoruz */
     overflow: hidden;
 }
 
 .hero-overlay {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    /* Soldaki yazıların arkasını koyulaştıran, sağdaki teraziyi ise net gösteren şık asimetrik geçiş */
-    background: linear-gradient(90deg, rgba(11, 29, 58, 0.95) 0%, rgba(11, 29, 58, 0.75) 50%, rgba(11, 29, 58, 0.3) 100%);
+    /* Soldaki yazıların okunması için koyu başlayıp, sağdaki terazinin net parlaması için şeffaflaşan modern geçiş */
+    background: linear-gradient(90deg, rgba(11, 31, 58, 0.98) 0%, rgba(11, 31, 58, 0.80) 45%, rgba(11, 31, 58, 0.2) 100%);
     z-index: 1;
 }
 
 .hero-content {
-    max-width: 650px; /* Yazı alanını sınırlayarak sağdaki görselle çakışmasını önlüyoruz */
-    margin: 0; /* Sola yaslamak için ortalamayı kaldırdık */
+    max-width: 620px; /* Yazıların sağdaki terazinin üstüne binmesini tamamen engelliyoruz */
+    position: relative;
+    z-index: 2;
 }
 
 .hero-title {
@@ -241,8 +242,7 @@ a {
     line-height: 1.25;
     margin-bottom: 22px;
     letter-spacing: -0.5px;
-    position: relative;
-    z-index: 2;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 /* Kelime renklendirmesini tamamen iptal edip asil beyaz rengi koruyoruz */
@@ -252,27 +252,28 @@ a {
 }
 
 .hero-text {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     color: rgba(255, 255, 255, 0.9);
     margin-bottom: 35px;
     line-height: 1.7;
-    position: relative;
-    z-index: 2;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .hero-subtitle {
     display: inline-block;
-    position: relative;
-    z-index: 2;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     font-size: 0.95rem;
+    font-weight: 600;
     letter-spacing: 2px;
+    color: var(--accent-color); /* Sadece en üstteki küçük künye yazısını kurumsal altın sarısı yaptık */
 }
 
 .hero-buttons {
-    position: relative;
-    z-index: 2;
+    display: flex;
+    gap: 15px;
 }
+
+
 .btn {
     display: inline-block;
     padding: 14px 32px;
