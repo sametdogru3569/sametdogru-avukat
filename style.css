@@ -209,67 +209,70 @@ a {
 }
 
 /* ==========================================================================
-   Hero / Büyük Afiş Alanı (Yeni Adalet Temalı & Modern)
+   Hero / Büyük Afiş Alanı (Sağ Tarafı Net Terazi & Hukuk Odaklı)
    ========================================================================== */
 .hero {
     position: relative;
-    /* Adalet, hukuk kitapları ve terazi temalı modern, yüksek kaliteli premium görsel */
-    background: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1600') center/cover no-repeat;
-    padding: 160px 0;
+    /* Sağ tarafında loş ışıkta parlayan modern adalet terazisi ve hukuk kitapları olan elit görsel */
+    background: url('https://images.unsplash.com/photo-1455434751176-ff1552056d9c?q=80&w=1600') center/cover no-repeat;
+    padding: 170px 0;
     color: var(--white);
-    text-align: center;
+    text-align: left; /* Yazıları sola yaslayarak sağdaki terazinin önünü tamamen açıyoruz */
     overflow: hidden;
 }
 
 .hero-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    /* Görseli asilce örten ve yazıların okunmasını sağlayan kurumsal lacivert/gece mavisi katman */
-    background: linear-gradient(180deg, rgba(10, 25, 47, 0.82) 0%, rgba(10, 25, 47, 0.92) 100%);
+    top: 0; left: 0; right: 0; bottom: 0;
+    /* Soldaki yazıların arkasını koyulaştıran, sağdaki teraziyi ise net gösteren şık asimetrik geçiş */
+    background: linear-gradient(90deg, rgba(11, 29, 58, 0.95) 0%, rgba(11, 29, 58, 0.75) 50%, rgba(11, 29, 58, 0.3) 100%);
     z-index: 1;
+}
+
+.hero-content {
+    max-width: 650px; /* Yazı alanını sınırlayarak sağdaki görselle çakışmasını önlüyoruz */
+    margin: 0; /* Sola yaslamak için ortalamayı kaldırdık */
 }
 
 .hero-title {
     font-family: var(--font-heading);
-    font-size: 3.5rem;
+    font-size: 3.6rem;
     font-weight: 700;
-    line-height: 1.3;
-    margin-bottom: 20px;
+    line-height: 1.25;
+    margin-bottom: 22px;
     letter-spacing: -0.5px;
     position: relative;
     z-index: 2;
 }
 
-/* Farklı renk karmaşasını bitirmek için em etiketindeki sarı rengi kaldırıp beyaz yapıyoruz */
+/* Kelime renklendirmesini tamamen iptal edip asil beyaz rengi koruyoruz */
 .hero-title em {
     font-style: normal;
     color: var(--white); 
 }
 
-/* Açıklama yazısının stilini netleştiriyoruz */
 .hero-text {
     font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.85);
-    max-width: 700px;
-    margin: 0 auto 35px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 35px;
     line-height: 1.7;
     position: relative;
     z-index: 2;
 }
 
 .hero-subtitle {
+    display: inline-block;
     position: relative;
     z-index: 2;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    letter-spacing: 2px;
 }
 
 .hero-buttons {
     position: relative;
     z-index: 2;
 }
-
 .btn {
     display: inline-block;
     padding: 14px 32px;
